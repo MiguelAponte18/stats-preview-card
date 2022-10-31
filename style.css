@@ -1,0 +1,185 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+ .attribution { color: #fff;
+ 	font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
+  
+body{
+	background-color:#090b1a;
+	font-size: 0.93em;
+}
+
+
+main{
+	height: 97vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card{
+	max-width: 67em;
+	
+	height: 26.6em;
+	background-color:#1b1938 ;
+	display: flex;
+	overflow: hidden;
+	border-radius: 0.3em;
+	margin: 0.7em;
+}
+.contenido{
+	width: 52%;
+	min-width: 52%;
+	height: 100%
+
+}
+.container-img{
+	position: relative;
+	width: 48%;
+	height: 100%;
+}
+.container-img span{
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	background-color:#6b0ca7;
+	opacity: 0.5;
+	left: 0;
+}
+.container-img img{
+	max-width: 100%;
+	object-fit: cover;
+	height: 100%;
+	
+}
+.contenido{
+padding-top: 5em;
+padding-left: 4em;
+padding-bottom: 4em;
+padding-right: 5em;
+}
+
+.contenido h1,.estadistica{
+	color: #fff;
+}
+h1{
+	font-family: 'Inter', sans-serif;
+	font-weight: 700;
+	font-size: 2.2em;
+	margin-bottom: 0.7em;
+}
+h1 span{
+	color:#aa5cdb;
+}
+
+p{
+	width: 87%;
+	color: #ffffff;
+	font-family: 'Inter', sans-serif;
+	line-height: 1.6;
+	font-size: 13.5px
+
+}
+
+.estadistica{
+	max-width: 100%;
+	font-family: 'Inter', sans-serif;
+	display: flex;
+	font-weight: 700;
+	font-size: 1.447em;
+	margin-top: 2.5em;
+     
+}
+
+.estadistica span{
+	margin-left: 3.7em;
+}
+
+.estadistica span:first-child{
+	margin-left: 0;
+
+}
+.estadistica-hijo{
+ color:		#ffffff;
+ font-family: 'Lexend Deca', sans-serif;
+ font-weight: 300;
+ font-size: 11px;
+ letter-spacing: 1px;
+ margin-top: 0.4em;
+}
+.estadistica-hijo {
+	margin-left: 4.55em;
+
+}
+.estadistica-hijo{
+	margin-left: 0;
+	margin-right: 0.3em;
+}
+
+@media (max-width: 900px) {
+	main{
+
+	}
+	.card{
+		display: flex;
+		flex-direction: column-reverse;
+		height: 47em;
+		max-width:21em; 
+
+	}
+	.container-img{
+		width: 100%;
+		height: 30%;
+	}
+	.container-img img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	.contenido{
+		height: 70%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding: 2em;
+		text-align: center;
+		position: relative;
+
+	}
+	h1{
+		font-size: 1.8em;
+		width: 100%;
+	}
+	p{
+		width: 99%;
+		text-align: center;
+		font-size: 13.5px
+	}
+	.estadistica{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-top: 1em;
+
+	}
+	.estadistica-hijo{
+		display: flex;
+		flex-direction: column;
+		bottom: 80px;
+		text-align: center;
+		width: 100%;
+	}
+	.estadistica span{
+		justify-content: center;
+		margin-top: 0.5em;
+		margin-left: 0;
+		margin-bottom: 0.5em;
+
+	}
+}
